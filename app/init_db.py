@@ -19,12 +19,6 @@ CREATE TABLE payments (
  status TEXT
 )
 """)
-cursor.execute("INSERT INTO users VALUES (1, 'admin', 'Admin@123', 
-'admin')")
-cursor.execute("INSERT INTO users VALUES (2, 'alice', 'Alice@123', 
-'user')")
-cursor.execute("INSERT INTO users VALUES (3, 'bob', 'Bob@123', 'user')")
-cursor.execute("INSERT INTO payments VALUES (1, 'alice', 5000, 
 'processed')")
 cursor.execute("INSERT INTO payments VALUES (2, 'bob', 7500, 'pending')")
 cursor.execute("INSERT INTO payments VALUES (3, 'admin', 99999, 
